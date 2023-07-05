@@ -1,6 +1,7 @@
 run("Bio-Formats Macro Extensions");
 // path = "C:/RESEARCH/MEL/Con001.czi"
-path = "C:/RESEARCH/Sholto_Chosen_data/Newest MEL/n1/Baf 2 (20.3).czi"
+//path = "C:/RESEARCH/Sholto_Chosen_data/Newest MEL/n1/Baf 2 (20.3).czi"
+path = "/Volumes/Extreme SSD/RESEARCH/Sholto_Data_N2_N3/N2/Baf 1.czi"
 open(path);
 Ext.setId(path)
 Ext.getMetadataValue("Information|Image|RefractiveIndex #1",refractiveIndexImmersion)
