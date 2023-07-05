@@ -14,8 +14,9 @@ for(index = 0; index < list.length; index++)
 {
 	fName = list[index];
 	open(input_path + fName);
-	
-	run("Correct 3D drift", "channel=1 correct only=0 lowest=1 highest=" + nSlices + " max_shift_x=" +maxShift +" max_shift_y=" +maxShift +" max_shift_z=0");
+	getDimensions(width, height, channels, slices, frames);
+
+	run("Correct 3D drift", "channel=1 correct only=0 lowest=1 highest=" + slices + " max_shift_x=" +maxShift +" max_shift_y=" +maxShift +" max_shift_z=0");
 
 	saveAs("Tiff", output_path + fName);
 	
